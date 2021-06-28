@@ -3,42 +3,42 @@
         "CatalogTitle": "Каталог масок",
         "cards": [
             {
-                "CatalogImage": "../assets/images/catalog_masks/image1.jpg",
+                "CatalogImage": "@/assets/images/catalog_masks/image1.jpg",
                 "name": "белая с узором",
                 "price": "299"
             },
             {
-                "CatalogImage": "../assets/images/catalog_masks/image2.jpg",
+                "CatalogImage": "@/assets/images/catalog_masks/image2.jpg",
                 "name": "фиолетовая с узором",
                 "price": "249"
             },
             {
-                "CatalogImage": "../assets/images/catalog_masks/image3.jpg",
+                "CatalogImage": "@/assets/images/catalog_masks/image3.jpg",
                 "name": "красная с узором",
                 "price": "599"
             },
             {
-                "CatalogImage": "../assets/images/catalog_masks/image4.jpg",
+                "CatalogImage": "@/assets/images/catalog_masks/image4.jpg",
                 "name": "синяя с узором",
                 "price": "199"
             },
             {
-                "CatalogImage": "../assets/images/catalog_masks/image5.jpg",
+                "CatalogImage": "@/assets/images/catalog_masks/image5.jpg",
                 "name": "черная с узором",
                 "price": "546"
             },
             {
-                "CatalogImage": "../assets/images/catalog_masks/image6.jpg",
+                "CatalogImage": "@/assets/images/catalog_masks/image6.jpg",
                 "name": "желтая с узором",
                 "price": "321"
             },
             {
-                "CatalogImage": "../assets/images/catalog_masks/image7.jpg",
+                "CatalogImage": "@/assets/images/catalog_masks/image7.jpg",
                 "name": "оранжевая с узором",
                 "price": "643"
             },
             {
-                "CatalogImage": "../assets/images/catalog_masks/image8.jpg",
+                "CatalogImage": "@/assets/images/catalog_masks/image8.jpg",
                 "name": "зеленая с узором",
                 "price": "239"
             }

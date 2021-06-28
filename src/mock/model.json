@@ -3,17 +3,17 @@
         "ModelTitle": "Модели масок",
         "models": [
             {
-                "ModelImage": "/model/image1.jpg",
+                "ModelImage": "@/assets/images/model/image1.jpg",
                 "title": "Анатомическая",
                 "subtitle": "С вытачкой на носу и подбородке"
             },
             {
-                "ModelImage": "/model/image2.jpg",
+                "ModelImage": "@/assets/images/model/image2.jpg",
                 "title": "Каркасная",
                 "subtitle": "С прочным швом от переносицы до подбородка"
             },
             {
-                "ModelImage": "/model/image3.jpg",
+                "ModelImage": "@/assets/images/model/image3.jpg",
                 "title": "Классическая",
                 "subtitle": "В форме традиционных "
             }

@@ -3,16 +3,16 @@
         "ProductionTitle": "Собственная производственная линия",
         "ProductionSubtitle": "Голландские учёные доказали, что Месси в два раза лучше Роналду на поле. Голландская информационная компания SciSports совместо с Университетом Левена в Бельгии провела исследование игровых качеств нападающего «Барселоны» Лионеля Месси и форварда «Ювентуса» Криштиану Роналду, сообщает Sport.es. По результатам анализа выяснилось, что в игре аргентинец в два раза превосходит португальца. Исследование определяет так называемую ценность действий на основе оценки возможностей, которая базируется на всевозможных параметрах игры.",
         "images": [
-            { "ProductImage": "../assets/images/landing_page_2/img4.jpg" },
-            { "ProductImage": "../assets/images/landing_page_2/img5.jpg" },
-            { "ProductImage": "../assets/images/landing_page_2/img4.jpg" },
-            { "ProductImage": "../assets/images/landing_page_2/img5.jpg" },
-            { "ProductImage": "../assets/images/landing_page_2/img4.jpg" },
-            { "ProductImage": "../assets/images/landing_page_2/img5.jpg" },
-            { "ProductImage": "../assets/images/landing_page_2/img4.jpg" },
-            { "ProductImage": "../assets/images/landing_page_2/img5.jpg" },
-            { "ProductImage": "../assets/images/landing_page_2/img4.jpg" },
-            { "ProductImage": "../assets/images/landing_page_2/img5.jpg" }
+            { "ProductImage": "@/assets/images/landing_page_2/img4.jpg" },
+            { "ProductImage": "@/assets/images/landing_page_2/img5.jpg" },
+            { "ProductImage": "@/assets/images/landing_page_2/img4.jpg" },
+            { "ProductImage": "@/assets/images/landing_page_2/img5.jpg" },
+            { "ProductImage": "@/assets/images/landing_page_2/img4.jpg" },
+            { "ProductImage": "@/assets/images/landing_page_2/img5.jpg" },
+            { "ProductImage": "@/assets/images/landing_page_2/img4.jpg" },
+            { "ProductImage": "@/assets/images/landing_page_2/img5.jpg" },
+            { "ProductImage": "@/assets/images/landing_page_2/img4.jpg" },
+            { "ProductImage": "@/assets/images/landing_page_2/img5.jpg" }
         ]
     }
 }
