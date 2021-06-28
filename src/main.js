@@ -1,10 +1,21 @@
 import Vue from 'vue'
 import App from './App.vue'
-import router from './router'
+// Підключаємо CSS Стилі
+import './assets/styles/style_obnul.css'
+import './assets/styles/style.css'
+// Підключаємо BootstrapVue
+import { BootstrapVue } from 'bootstrap-vue'
+import 'bootstrap/dist/css/bootstrap.css'
+import 'bootstrap-vue/dist/bootstrap-vue.css'
+Vue.use(BootstrapVue)
+// Підключаємо VueRouter 
+import VueRouter from 'vue-router'
+import router from './js/router'
+Vue.use(VueRouter)
 
-Vue.config.productionTip = false
 
 new Vue({
-  router,
-  render: h => h(App)
+	render: h => h(App),
+	el: '#app',
+	router,
 }).$mount('#app')
