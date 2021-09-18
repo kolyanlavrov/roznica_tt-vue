@@ -21,7 +21,7 @@
 
 <script>
     import { Swiper, SwiperSlide, directive } from 'vue-awesome-swiper'
-    import 'swiper/swiper-bundle.css'
+import 'swiper/css/swiper.css'
     import data from '../mock/production.json'
     export default {
     name: 'Production',
@@ -56,7 +56,7 @@
                 navigation: {
                     nextEl: '.production-button-next',
                     prevEl: '.production-button-prev'
-                    },
+                    }
                 }
             }
         }
@@ -108,13 +108,13 @@
     content: "";
     width: 43px;
     height: 43px;
-    background: url(../assets/images/icon-svg/slick-next.svg) no-repeat;
+    background: url(../../public/images/icon-svg/slick-next.svg) no-repeat;
 }
 .production-button-prev::after{
     content: "";
     width: 43px;
     height: 43px;
-    background: url(../assets/images/icon-svg/slick-prev.svg) no-repeat;
+    background: url(/images/icon-svg/slick-prev.svg) no-repeat;
 }
 
 @media (max-width: 480px) {

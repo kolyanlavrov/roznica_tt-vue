@@ -11,22 +11,22 @@
                             <a href="tel:+7 (495) 323-89-99">+7 (495) 323-89-99</a>
                         </div>
                         <div class="menu__facebook link">
-                            <a href="https://www.facebook.com/"><img src="../assets/images/icon-svg/facebook.svg" alt=""></a>
+                            <a href="https://www.facebook.com/"><img src="../../public/images/icon-svg/facebook.svg" alt=""></a>
                         </div>
                         <div class="menu__youtube link">
-                            <a href="#"><img src="../assets/images/icon-svg/youtube.svg" alt=""></a>
+                            <a href="#"><img src="../../public/images/icon-svg/youtube.svg" alt=""></a>
                         </div>
                         <div class="menu__insta link">
-                            <a href="#"><img src="../assets/images/icon-svg/insta.svg" alt="" /></a>
+                            <a href="#"><img src="../../public/images/icon-svg/insta.svg" alt="" /></a>
                         </div>
                         <div class="menu__vk link">
-                            <a href="#"><img src="../assets/images/icon-svg/vk.svg" alt="" /></a>
+                            <a href="#"><img src="../../public/images/icon-svg/vk.svg" alt="" /></a>
                         </div>
                         <div class="menu__ok link">
-                            <a href="#"><img src="../assets/images/icon-svg/ok.svg" alt="" /></a>
+                            <a href="#"><img src="../../public/images/icon-svg/ok.svg" alt="" /></a>
                         </div>
                         <div class="menu__korzina">
-                            <a href="#"><img src="../assets/images/icon-svg/korzina.svg" alt="" /></a>
+                            <a href="#"><img src="../../public/images/icon-svg/korzina.svg" alt="" /></a>
                         </div>
                     </div>
                 </div>
@@ -70,12 +70,12 @@
                     <ul class="header__icons px-0">
                         <li>
                             <a href="#" class="header__tell">
-                                <img src="../assets/images/icon-svg/tell.svg" alt="">
+                                <img src="../../public/images/icon-svg/tell.svg" alt="">
                             </a>
                         </li>
                         <li>
                             <a href="#" class="header__location">
-                                <img src="../assets/images/icon-svg/location.svg" alt="">
+                                <img src="../../public/images/icon-svg/location.svg" alt="">
                             </a>
                         </li>
                     </ul>

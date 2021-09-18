@@ -3,15 +3,13 @@
         <div class="container">
             <div class="main-baner__img card">
                 <picture>
-                    <source media="(max-width: 767px)" srcset="../assets/images/landing_page_2/img1_mobile.jpg">
-                    <img src="../assets/images/main_baner/img1.jpg" class="" alt="...">
+                    <source media="(max-width: 767px)" srcset="../../public/images/landing_page_2/img1_mobile.jpg">
+                    <img src="../../public/images/main_baner/img1.jpg" class="" alt="...">
                 </picture>
                 <div class="main-baner__body card-img-overlay col-md-6">
                     <h5 class="main-baner__title">МАСКА ИНДИВИДУАЛЬНОГО ПОЛЬЗОВАНИЯ</h5>
                     <p class="main-baner__text mb-4">Маска стала необходимой вещью способной помочь людям чувствовать себя более уверенно современных городских условиях.</p>
-                    <div class="button main-baner__button">
-                        <router-link to="#">Заказать</router-link>
-                    </div>
+                    <ButtonSimple/>
                 </div>
             </div>
         </div>
@@ -19,10 +17,19 @@
 </template>
 
 <script>
-
+import ButtonSimple from '../components/ButtonSimple.vue'
+export default {
+    name:"MainBaner",
+    components:{
+        ButtonSimple
+    }
+}
 </script>
 
 <style scoped>
+button.button {
+    margin: 0px;
+}
 .card {
     border:none;
     border-radius: none;

@@ -11,7 +11,7 @@
                             <div class="card-body__price row">
                                 <span class="card__price">{{card.price}} ₽</span>
                                 <button class="body__korzina">
-                                    <img src="../assets/images/icon-svg/korzina_plus.svg" alt=""/>
+                                    <img src="/images/icon-svg/korzina_plus.svg" alt=""/>
                                 </button>
                             </div>
                             <!-- <button class="body__korzina m-w-480 between">
@@ -21,20 +21,24 @@
                     </div>
                 </div>
             </div>
-            <button type="button" class="catalog__button button" 
+            <!-- <button type="button" class="catalog__button button" 
             :class="{active:isActive}"
             @click="isActive = !isActive"
             >
                 Показать все
-            </button>
+            </button> -->
+            <ButtonArrows/>
         </div>
     </div>
 </template>
 <script>
 import data from '../mock/cards.json'
+import ButtonArrows from '../components/ButtonWithArrow.vue'
 export default {
     name:"catalogMasks",
-    components:{},
+    components:{
+        ButtonArrows
+    },
     data () {
         return {
             cards: data.products,
@@ -63,6 +67,7 @@ export default {
 }
 .catalog__cards{
     margin: 0px -10px;
+    padding-bottom: 16px;
 }
 .js-catalog-mask-item {
     padding: 0px 10px;
@@ -88,9 +93,10 @@ button.body__korzina{
     width: 43px;
     height: 25px;
     align-self: flex-end;
+    margin-right: 10.5px;
 }
 .card-body__price {
-    padding: 0px 19px;
+    /* padding: 0px 19px; */
     margin-top: 20px;
     justify-content: space-between;
     align-items: center;
@@ -102,6 +108,7 @@ button.body__korzina{
     flex: 1 1 auto;
 }
 .card__price {
+    width: auto;
     font-weight: bold;
     font-size: 24px;
     line-height: 28px;
@@ -153,6 +160,19 @@ button.body__korzina{
     .js-catalog-mask-item {
         padding: 0px 7.5px;
         margin-bottom: 15px;
+    }
+}
+@media (max-width: 480px) {
+    .card-body {
+    padding: 15px 10px 15px;
+    }
+    .card__subtitle{
+        font-size: 12px;
+        line-height: 14px;
+    }
+    .card__price{
+        font-size: 15px;
+        line-height: 18px;
     }
 }
 </style>

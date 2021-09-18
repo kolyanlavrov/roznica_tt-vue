@@ -16,22 +16,25 @@
             <div class="model__text text">
                 <p>Мы предлагаем купить маску индивидуальной защиты двухслойного типа. Как правило, этого уже достаточно для защиты органов дыхания. Однако если у клиента имеется свой взгляд на уровень безопасности, мы готовы создать трехслойные изделия.</p>
             </div>
-            <button type="button" class="model__button button">
+            <!-- <button type="button" class="model__button button">
                 <a href="#">Заказать</a>
-            </button>
+            </button> -->
+            <ButtonSimpleWhite/>
         </div>
     </div>
 </template>
 
 <script> 
 import { Swiper, SwiperSlide, directive } from 'vue-awesome-swiper'
-import 'swiper/swiper-bundle.css'
+import 'swiper/css/swiper.css'
 import data from '../mock/model.json'
+import ButtonSimpleWhite from '../components/ButtonSimpleWhite.vue'
 export default {
     name: "Model",
     components: {
         Swiper,
-        SwiperSlide
+        SwiperSlide,
+        ButtonSimpleWhite
     },
     directives: {
         swiper: directive
@@ -59,6 +62,7 @@ export default {
 </script>
 
 <style scoped>
+
 .model{
     padding-top: 30px;
 }

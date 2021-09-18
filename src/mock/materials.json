@@ -1,0 +1,22 @@
+{
+    "Main": {
+        "MaterialsTitle": "Технология и материалы",
+        "Images": [
+            { "MaterialImage": "/images/materials/image1.jpg" },
+            { "MaterialImage": "/images/materials/image2.jpg" },
+            { "MaterialImage": "/images/materials/image3.jpg" },
+            { "MaterialImage": "/images/materials/image4.jpg" },
+            { "MaterialImage": "/images/materials/image5.jpg" },
+            { "MaterialImage": "/images/materials/image1.jpg" },
+            { "MaterialImage": "/images/materials/image2.jpg" },
+            { "MaterialImage": "/images/materials/image3.jpg" },
+            { "MaterialImage": "/images/materials/image4.jpg" },
+            { "MaterialImage": "/images/materials/image5.jpg" },
+            { "MaterialImage": "/images/materials/image1.jpg" },
+            { "MaterialImage": "/images/materials/image2.jpg" },
+            { "MaterialImage": "/images/materials/image3.jpg" },
+            { "MaterialImage": "/images/materials/image4.jpg" },
+            { "MaterialImage": "/images/materials/image5.jpg" }
+        ]
+    }
+}

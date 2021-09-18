@@ -25,6 +25,7 @@
                         <swiper-slide class="galery__slide" v-for="(images, index) in AdvGalery.images" :key="`${images,id}-${index}`">
                             <img :src="images.GaleryImage" alt="">
                         </swiper-slide>
+                        <div class="swiper-pagination" slot="pagination"></div>
                     </swiper>
                     <div class="swiper-button-prev galery-button-prev" slot="button-prev"></div>
                     <div class="swiper-button-next galery-button-next" slot="button-next"></div>
@@ -34,30 +35,35 @@
                 <div class="galery__text">
                     <p>Мы готовы дополнить каждое изделие брендом вашей компании. Таким образом, она станет современной частью вашего фирменного стиля.</p>
                 </div>
-                <div class="galery__button button">
+                <!-- <div class="galery__button button">
                     <a href="#">Заказать</a>
-                </div>
+                </div> -->
+                <ButtonSimple/>
             </div>
         </div>
     </div>
 </template>
 
 <script>
-import { Swiper, SwiperSlide, directive } from 'vue-awesome-swiper'
-import 'swiper/swiper-bundle.css'
 import data from '../mock/advantages.json'
+import { Swiper, SwiperSlide, directive } from 'vue-awesome-swiper'
+import 'swiper/css/swiper.css'
+import ButtonSimple from '../components/ButtonSimple.vue'
 export default {
     name: "Advantages",
     title: 'Navigation',
     components: {
         Swiper,
-        SwiperSlide
+        SwiperSlide,
+        ButtonSimple
     },
     directives: {
         swiper: directive
     },
     data () {
         return{
+            Adv: data.advantages,
+            AdvGalery: data.galery,
             swiperOption: {
                 slidesPerView: 5,
                 spaceBetween: 20,
@@ -82,14 +88,17 @@ export default {
                         // centeredSlides: true,
                     }
                 }
-            },
-            Adv: data.advantages,
-            AdvGalery: data.galery,
+            }
         }
     }
 }
 </script>
 <style scoped>
+.row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
 .advantages{
     padding: 30px 0px 30px;
 }
@@ -107,13 +116,13 @@ export default {
     text-align: center;
     margin-bottom: 20px;
 }
-.advantages__icons{
+.advantages__icon{
     margin: 0px -10px;
 }
 .advantages__item{
     display: flex;
     flex-direction: column;
-    flex: 0 1 16.6666%;
+    flex: 0 1 16.6%;
     text-align: center;
     padding: 0px 10px;
 }
@@ -139,6 +148,11 @@ export default {
         padding: 10px 0px 22px 0px;
     }
 }
+@media (max-width: 991px) {
+    .advantages__item {
+        flex: 0 1 50%;
+    }
+}
 @media (max-width: 767px) {
     .advantages__title{
         font-size: 24px;
@@ -149,7 +163,7 @@ export default {
     .advantages__galery{
         padding: 10px 0px 30px 0px;
     }
-    .advantages__icons{
+    .advantages__icon{
         flex-wrap: wrap;
     }
     .advantages__item{
@@ -184,13 +198,13 @@ export default {
     content: "";
     width: 43px;
     height: 43px;
-    background: url(../assets/images/advantages/svg/arrow_next.svg) no-repeat;
+    background: url(/images/advantages/svg/arrow_next.svg) no-repeat;
 }
 .galery-button-prev::after{
     content: "";
     width: 43px;
     height: 43px;
-    background: url(../assets/images/advantages/svg/arrow_prev.svg) no-repeat;
+    background: url(/images/advantages/svg/arrow_prev.svg) no-repeat;
 }
 .galery__text{
     font-size: 17px;

@@ -3,10 +3,15 @@
 body{
     font-family: "Roboto", sans-serif;
     height: 100%;
-    /* overflow-x: hidden; */
+    overflow-x: hidden;
 }
 p {
     margin-bottom: 0rem!important;
+}
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    
 }
 .wrapper{
     min-height: 100%;
@@ -21,6 +26,9 @@ p {
     max-width: 1054px!important;
     padding: 0px 15px;
     margin: 0 auto;
+}
+.d-b-480{
+    display: none;
 }
 @media (max-width:767px){
     .container{
@@ -43,28 +51,16 @@ p {
     line-height: 53px;
     text-transform: uppercase;
 }
-.button a{
-    font-family: "Roboto";
-    display: inline-block;
-    font-size: 14px;
-    line-height: 16px;
-    text-align: center;
-    color: #FFFFFF;
-    background-color:  #EC5827;
-    padding: 13px 86px;
-}
-.button a:hover{
-    background: #FF7E53;
-    border-radius: 4px;
-    text-decoration: none;
-    color: #FFFFFF;
-}
-.button a:active{
-    background: #AB3A15;
-}
+
 @media (max-width:480px){
     .button a{
         padding: 14px 64.5px;
+    }
+    .d-b-480{
+        display: block;
+    }
+    .d-n-480{
+        display: none;
     }
 }
 .card{

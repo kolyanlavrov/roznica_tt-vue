@@ -3,27 +3,27 @@
         "AdvantageTitle": "НАШИ ПРЕИМУЩЕСТВА",
         "images": [
             {
-                "AdvantageImage": "@/assets/images/advantages/svg/icon1.svg",
+                "AdvantageImage": "/images/advantages/svg/icon1.svg",
                 "AdvantageSubtitle": "Производство и доставка первой партии за один день"
             },
             {
-                "AdvantageImage": "@/assets/images/advantages/svg/icon2.svg",
+                "AdvantageImage": "/images/advantages/svg/icon2.svg",
                 "AdvantageSubtitle": "Собственное автоматизированное производство"
             },
             {
-                "AdvantageImage": "@/assets/images/advantages/svg/icon3.svg",
+                "AdvantageImage": "/images/advantages/svg/icon3.svg",
                 "AdvantageSubtitle": "Бесплатная доставка при заказе от 1000 штук"
             },
             {
-                "AdvantageImage": "@/assets/images/advantages/svg/icon4.svg",
+                "AdvantageImage": "/images/advantages/svg/icon4.svg",
                 "AdvantageSubtitle": "Минимальный заказ от пяти штук"
             },
             {
-                "AdvantageImage": "@/assets/images/advantages/svg/icon5.svg",
+                "AdvantageImage": "/images/advantages/svg/icon5.svg",
                 "AdvantageSubtitle": "Надежный натуральный материал"
             },
             {
-                "AdvantageImage": "@/assets/images/advantages/svg/icon6.svg",
+                "AdvantageImage": "/images/advantages/svg/icon6.svg",
                 "AdvantageSubtitle": "Выбор из более чем 30 расцветок"
             }
         ]
@@ -31,21 +31,21 @@
     "galery": {
         "GaleryTitle": "Галерея расцветок",
         "images": [
-            { "GaleryImage": "/advantages/image1.jpg" },
-            { "GaleryImage": "/advantages/image2.jpg" },
-            { "GaleryImage": "/advantages/image3.jpg" },
-            { "GaleryImage": "/advantages/image4.jpg" },
-            { "GaleryImage": "/advantages/image5.jpg" },
-            { "GaleryImage": "/advantages/image1.jpg" },
-            { "GaleryImage": "/advantages/image2.jpg" },
-            { "GaleryImage": "/advantages/image3.jpg" },
-            { "GaleryImage": "/advantages/image4.jpg" },
-            { "GaleryImage": "/advantages/image5.jpg" },
-            { "GaleryImage": "/advantages/image1.jpg" },
-            { "GaleryImage": "/advantages/image2.jpg" },
-            { "GaleryImage": "/advantages/image3.jpg" },
-            { "GaleryImage": "/advantages/image4.jpg" },
-            { "GaleryImage": "/advantages/image5.jpg" }
+            { "GaleryImage": "/images/advantages/image1.jpg" },
+            { "GaleryImage": "/images/advantages/image2.jpg" },
+            { "GaleryImage": "/images/advantages/image3.jpg" },
+            { "GaleryImage": "/images/advantages/image4.jpg" },
+            { "GaleryImage": "/images/advantages/image5.jpg" },
+            { "GaleryImage": "/images/advantages/image1.jpg" },
+            { "GaleryImage": "/images/advantages/image2.jpg" },
+            { "GaleryImage": "/images/advantages/image3.jpg" },
+            { "GaleryImage": "/images/advantages/image4.jpg" },
+            { "GaleryImage": "/images/advantages/image5.jpg" },
+            { "GaleryImage": "/images/advantages/image1.jpg" },
+            { "GaleryImage": "/images/advantages/image2.jpg" },
+            { "GaleryImage": "/images/advantages/image3.jpg" },
+            { "GaleryImage": "/images/advantages/image4.jpg" },
+            { "GaleryImage": "/images/advantages/image5.jpg" }
         ]
     }
 }

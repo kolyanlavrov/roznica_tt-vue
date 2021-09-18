@@ -1,0 +1,11 @@
+{
+    "MapMain": {
+        "MapTitle": "Контакты",
+        "MapImage1": "images/map/image1.jpg",
+        "MapImage2": "images/map/image2.jpg",
+        "MapLocation": "images/map/location.svg",
+        "MapTell1": "+7 (495) 357-05-33",
+        "MapTell2": "8 800 555-89-88",
+        "MapAdress": "Краснобогатырская улица 90, стр.1, м. «Преображенская площадь» Ежедневно с 10:00 до 21:00"
+    }
+}
