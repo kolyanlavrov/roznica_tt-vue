@@ -65,6 +65,7 @@ export default {
 
 .model{
     padding-top: 30px;
+    overflow-x: hidden;
 }
 .model__container{
     max-width: 851px;

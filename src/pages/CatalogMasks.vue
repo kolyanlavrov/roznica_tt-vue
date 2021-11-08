@@ -5,19 +5,22 @@
             <div class="catalog__cards row g-0">
                 <div class="col-6 col-md-4 col-lg-3 js-catalog-mask-item" v-for="(card, index) in cards.cards" :key="index">
                     <div class="catalog__card">
-                        <img :src="card.CatalogImage" class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <p class="card__subtitle"><strong>Маска анатомическая</strong><br>{{card.name}}</p>
-                            <div class="card-body__price row">
-                                <span class="card__price">{{card.price}} ₽</span>
-                                <button class="body__korzina">
-                                    <img src="/images/icon-svg/korzina_plus.svg" alt=""/>
-                                </button>
+                        <router-link 
+                        :to="{name:'Masks', params: {id: card.id}}">
+                            <img :src="card.CatalogImage" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <p class="card__subtitle"><strong>Маска анатомическая</strong><br>{{card.name}}</p>
+                                <div class="card-body__price row">
+                                    <span class="card__price">{{card.price}} ₽</span>
+                                    <button class="body__korzina">
+                                        <img src="/images/icon-svg/korzina_plus.svg" alt=""/>
+                                    </button>
+                                </div>
+                                <!-- <button class="body__korzina m-w-480 between">
+                                    <p>В корзину</p> <span></span>
+                                </button> -->
                             </div>
-                            <!-- <button class="body__korzina m-w-480 between">
-                                <p>В корзину</p> <span></span>
-                            </button> -->
-                        </div>
+                        </router-link>
                     </div>
                 </div>
             </div>

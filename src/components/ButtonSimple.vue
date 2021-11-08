@@ -39,6 +39,8 @@ button.button:active {
 @media (max-width:480px) {
     button.button {
     padding: 13px 64.5px;
+    margin: 0px auto 42px;
     }
+
 }
 </style>

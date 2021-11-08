@@ -28,7 +28,7 @@ export default {
 
 <style scoped>
 button.button {
-    margin: 0px;
+    margin: 0 0;
 }
 .card {
     border:none;

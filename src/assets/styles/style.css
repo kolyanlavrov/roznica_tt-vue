@@ -11,7 +11,7 @@ p {
 .row {
     display: flex;
     flex-wrap: wrap;
-    
+
 }
 .wrapper{
     min-height: 100%;
@@ -53,9 +53,6 @@ p {
 }
 
 @media (max-width:480px){
-    .button a{
-        padding: 14px 64.5px;
-    }
     .d-b-480{
         display: block;
     }

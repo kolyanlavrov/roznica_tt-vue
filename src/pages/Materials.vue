@@ -22,7 +22,7 @@
             </div>
             <div class="materials__slider">
                 <div class="swiper-container gallery-top materials__swiper">
-                    <swiper class="swiper swiper-wrapper materials__wrapper" :options="swiperOption">
+                    <swiper class="swiper swiper-wrapper materials__wrapper" :options="swiperOptionTop" ref="swiperTop">
                         <swiper-slide class="swiper-slide materials__slide" v-for="(Images, index) in Mat.Images" :key="`${Images, id}-${index}`">
                             <img :src="Images.MaterialImage" alt="">
                         </swiper-slide>
@@ -32,7 +32,7 @@
                 <div class="swiper-button-prev materials-button-prev"></div>
             </div>
             <div class="swiper-container gallery-thumbs">
-                <swiper class="swiper swiper-wrapper" :options="swiperOption">
+                <swiper class="swiper swiper-wrapper" :options="swiperOptionThumbs" ref="swiperThumbs">
                     <swiper-slide class="swiper-slide materials__slide" v-for="(Images, index) in Mat.Images" :key="`${Images, id}-${index}`">
                         <img :src="Images.MaterialImage" alt="">
                     </swiper-slide>
@@ -64,32 +64,41 @@ export default {
         SwiperSlide,
         ButtonSimple
     },
-    data () {
-        return {
-            Mat: data.Main,
-            swiperOption: {
-                spaceBetween: 9,
-                slidesPerView: 5,
-                freeMode: true,
-                watchSlidesVisibility: true,
-                watchSlidesProgress: true,
-                breakpoints: {
-                    320: {
-                        slidesPerView: 'auto',
-                        spaceBetween: 9,
-                    },
-                    768: {
-                        slidesPerView: 5,
-                        spaceBetween: 20,
-                        // centeredSlides: true,
-                    }
-                },
-                navigation: {
-                    nextEl: '.materials-button-next',
-                    prevEl: '.materials-button-prev'
-                }
-            }
+    data() {
+      return {
+        Mat: data.Main,
+        swiperOptionTop: {
+          loop: true,
+          loopedSlides: 5, // looped slides should be the same
+          spaceBetween: 10,
+          navigation: {
+            nextEl: '.materials-button-next',
+            prevEl: '.materials-button-prev'
+          },
+          breakpoints: {
+              768: {
+                  slidesPerView: 5
+              }
+          }
+        },
+        swiperOptionThumbs: {
+          loop: true,
+          loopedSlides: 5, // looped slides should be the same
+          spaceBetween: 10,
+          centeredSlides: true,
+          slidesPerView: 'auto',
+          touchRatio: 0.2,
+          slideToClickedSlide: true
         }
+      }
+    },
+    mounted() {
+      this.$nextTick(() => {
+        const swiperTop = this.$refs.swiperTop.$swiper
+        const swiperThumbs = this.$refs.swiperThumbs.$swiper
+        swiperTop.controller.control = swiperThumbs
+        swiperThumbs.controller.control = swiperTop
+      })
     }
 }
 </script>

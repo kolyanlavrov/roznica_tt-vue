@@ -9,7 +9,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-12 col-md-6 row mx-0 px-0">
+                <div class="col-12 col-md-6 mx-0 px-0">
                     <div class="designer__characteristic-body">
                         <div class="designer__characteristic characteristic">
                             <h3 class="characteristic__title">Маски от дизайнерского дома Татьяны Тягиной</h3>
@@ -34,6 +34,9 @@
 </script>
 
 <style scoped>
+.row {
+    /* width: auto; */
+}
 .designer{
     background: #F2F2F2;
 }

@@ -132,7 +132,6 @@ export default {
     .opt__list li{
         border-left: none;
         flex: 0 1 100%;
-        padding-left: 0px;
         margin-bottom: 10px;
     }
     .opt__list li:last-child{

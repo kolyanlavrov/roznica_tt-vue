@@ -67,6 +67,7 @@ import 'swiper/css/swiper.css'
     background: #F2F2F2;
     padding: 40px 0px 72px 0px;
 }
+
 .production__slider{
     max-width: 1054px;
     padding: 0px 15px;
