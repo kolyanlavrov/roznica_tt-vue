@@ -1,21 +1,40 @@
 <template>
     <div class="mask-card">
         <div class="container">
-            <div class="mask-card__body">
-                <div class="mask-card__slider">
-                    <swiper class="swiper gallery-top" :options="swiperOptionTop" ref="swiperTop">
-                        <swiper-slide class="mask-card__slide" v-for="(images, index) in galery.images" :key="`${images,id}-${index}`">
-                            <img :src="images.GaleryImage" alt="">
+            <div class="mask-card__body d-flex">
+                <div class="mask-card__slider col-6">
+                    <swiper class="swiper gallery-top" 
+					v-for="(swiper, index) in card.cards" :key="`${swiper.id}-${index}`"
+					:options="swiperOptionTop" ref="swiperTop">
+                        <swiper-slide class="mask-card__slide">
+                            <img :src="swiper.CatalogImage" alt="">
                         </swiper-slide>
                     </swiper>
-                    <swiper class="swiper gallery-thumbs" :options="swiperOptionThumbs" ref="swiperThumbs">
-                        <swiper-slide class="mask-card__slide" v-for="(images, index) in galery.images" :key="`${images,id}-${index}`">
-                            <img :src="images.GaleryImage" alt="">
+                    <swiper class="swiper gallery-thumbs" 
+					v-for="(swiper, index) in card.cards" :key="`${swiper.id}-${index}`"
+					:options="swiperOptionThumbs" ref="swiperThumbs">
+                        <swiper-slide class="mask-card__slide"  >
+                            <img :src="swiper.CatalogImage" alt="">
                         </swiper-slide>
                     </swiper>
                 </div>
-                <div class="mask-card__about">
-
+                <div class="mask-card__about col-6">
+					<div class="mask-card__info"
+					v-for="(info, index) in card.cards" :key="`${info.id}-${index}`"
+					>
+						<div class="mask-card__title">
+							{{info.Title}}
+						</div>
+						<div class="mask-card__article">
+							{{info.Article}}
+						</div>
+						<div class="mask-card__size">
+							{{info.Size}}
+						</div>
+						<div class="mask-card__price">
+							{{info.Price}}
+						</div>
+					</div>
                 </div>
             </div>
         </div>
@@ -24,7 +43,7 @@
 <script>
 import { Swiper, SwiperSlide } from 'vue-awesome-swiper'
 import 'swiper/css/swiper.css'
-import data from '../mock/advantages'
+import data from '../mock/cards'
 export default {
     name: 'Card',
     components: {
@@ -33,7 +52,8 @@ export default {
     },
     data() {
       return {
-        galery: data.galery,
+        card: data.products,
+		
         swiperOptionTop: {
           loop: true,
           loopedSlides: 5,
@@ -61,5 +81,23 @@ export default {
   }
 </script>
 <style scoped>
-
+.mask-card__slider{
+	height: 480px;
+}
+.gallery-top {
+	height: 80%;
+	width: 100%;
+}
+.gallery-thumbs {
+	height: 20%;
+	box-sizing: border-box;
+}
+.gallery-thumbs .swiper-slide {
+	width: 25%;
+	height: 100%;
+	opacity: 0.4;
+}
+.gallery-thumbs .swiper-slide-active {
+	opacity: 1;
+}
 </style>

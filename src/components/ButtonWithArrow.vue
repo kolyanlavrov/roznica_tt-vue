@@ -1,7 +1,7 @@
 <template>
     <button type="button" class="button-arrows"
     :class="{active:isActive}"
-    @click="isActive = !isActive; $router.push('/catalogmasks')"
+    @click="isActive = !isActive; $router.push({name: 'CatalogMasks'})"
     >
     Показать все
     </button>

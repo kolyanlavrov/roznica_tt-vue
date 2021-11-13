@@ -5,50 +5,74 @@
             {
                 "id": 1,
                 "CatalogImage": "/images/catalog_masks/image1.jpg",
-                "name": "белая с узором",
-                "price": "299"
+                "Name": "белая с узором",
+                "Price": "299",
+                "Title": "Маска медицинская одноразовая трехслойная, белая с узором",
+                "Article": "Артикул: 1-111",
+                "Size": "One Size"
             },
             {
                 "id": 2,
                 "CatalogImage": "/images/catalog_masks/image2.jpg",
-                "name": "фиолетовая с узором",
-                "price": "249"
+                "Name": "фиолетовая с узором",
+                "Price": "249",
+                "Title": "Маска медицинская одноразовая трехслойная, фиолетовая с узором",
+                "Article": "Артикул: 2-321",
+                "Size": "One Size"
             },
             {
                 "id": 3,
                 "CatalogImage": "/images/catalog_masks/image3.jpg",
-                "name": "красная с узором",
-                "price": "599"
+                "Name": "красная с узором",
+                "Price": "599",
+                "Title": "Маска медицинская одноразовая трехслойная, красная с узором",
+                "Article": "Артикул: 3-096",
+                "Size": "One Size"
             },
             {
                 "id": 4,
                 "CatalogImage": "/images/catalog_masks/image4.jpg",
-                "name": "синяя с узором",
-                "price": "199"
+                "Name": "синяя с узором",
+                "Price": "199",
+                "Title": "Маска медицинская одноразовая трехслойная, синяя с узором",
+                "Article": "Артикул: 4-513",
+                "Size": "One Size"
             },
             {
                 "id": 5,
                 "CatalogImage": "/images/catalog_masks/image5.jpg",
-                "name": "черная с узором",
-                "price": "546"
+                "Name": "черная с узором",
+                "Price": "546",
+                "Title": "Маска медицинская одноразовая трехслойная, черная с узором",
+                "Article": "Артикул: 5-000",
+                "Size": "One Size"
             },
             {
                 "id": 6,
                 "CatalogImage": "/images/catalog_masks/image6.jpg",
-                "name": "желтая с узором",
-                "price": "321"
+                "Name": "желтая с узором",
+                "Price": "321",
+                "Title": "Маска медицинская одноразовая трехслойная, желтая с узором",
+                "Article": "Артикул: 6-666",
+                "Size": "One Size"
             },
             {
                 "id": 7,
                 "CatalogImage": "/images/catalog_masks/image7.jpg",
-                "name": "оранжевая с узором",
-                "price": "643"
+                "Name": "оранжевая с узором",
+                "Price": "643",
+                "Title": "Маска медицинская одноразовая трехслойная, оранжевая с узором",
+                "Article": "Артикул: 7-031",
+                "Size": "One Size"
             },
             {
                 "id": 8,
                 "CatalogImage": "/images/catalog_masks/image8.jpg",
-                "name": "зеленая с узором",
-                "price": "239"
+                "Name": "зеленая с узором",
+                "Price": "239",
+                "Title": "Маска медицинская одноразовая трехслойная, зеленая с узором",
+                "Article": "Артикул: 8-561",
+                "Size": "One Size"
             }
         ]
     }

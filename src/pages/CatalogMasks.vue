@@ -9,9 +9,9 @@
                         :to="{name:'Masks', params: {id: card.id}}">
                             <img :src="card.CatalogImage" class="card-img-top" alt="...">
                             <div class="card-body">
-                                <p class="card__subtitle"><strong>Маска анатомическая</strong><br>{{card.name}}</p>
+                                <p class="card__subtitle"><strong>Маска анатомическая</strong><br>{{card.Name}}</p>
                                 <div class="card-body__price row">
-                                    <span class="card__price">{{card.price}} ₽</span>
+                                    <span class="card__price">{{card.Price}} ₽</span>
                                     <button class="body__korzina">
                                         <img src="/images/icon-svg/korzina_plus.svg" alt=""/>
                                     </button>
